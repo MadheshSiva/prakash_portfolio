@@ -1,0 +1,30 @@
+.Typewriter__cursor {
+    width: 3px; /* Adjust the width of the cursor */
+    height: 4rem; /* Adjust to match the font size of the text */
+    background-color: #4285F4; /* Set the cursor color */
+    animation: blink 0.8s step-end infinite; /* Optional: Make the cursor blink */
+    display: inline-block; /* Make sure it's displayed inline with the text */
+    margin-left: 2px; /* Optional: Adds some space between the text and the cursor */
+    cursor: pointer; /* Change cursor style when hovering over the text */
+    
+}
+
+/* Optional: Blinking effect */
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+i{
+    transition: transform .5s;
+}
+
+
+button:hover i{
+    transform: translateX(5px);
+ 
+}
