@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { User, Mail, Phone, MessageSquare, Send } from 'lucide-react';
-import {Person,Email, Call,Sms} from "@material-ui/icons"
+import {Person,Email, Call,Sms} from "@mui/icons-material"
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
