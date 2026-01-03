@@ -5,6 +5,9 @@ import AboutPage from "../main/about/aboutPage";
 import AboutBtn from "../button/aboutBtn";
 import ExperiencePage from "../main/experience-research/experience";
 import ContactForm from "../main/contact/contactUs";
+import { ProgrammingProfiles } from "../main/programs/programingSkills";
+import { SkillsAbilities } from "../main/skills/skills";
+import ProfileSection from "../main/profileSection/profileSection";
 const HomePage = () => {
     return (
         <div className="relative flex ">
@@ -20,7 +23,16 @@ const HomePage = () => {
                 <AboutPage/>
                 </section>
                 <section>
+                    <ProgrammingProfiles/>
+                </section>
+                <section>
+                    <SkillsAbilities/>
+                </section>
+                <section>
                     <ExperiencePage/>
+                </section>
+                <section>
+                    <ProfileSection/>
                 </section>
                 <section>
                     <h2 className="text-[2rem] text-center"><i className="far fa-address-book"></i> Get in<span className="text-[#007bff]">Touch</span> </h2>

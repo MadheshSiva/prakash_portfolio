@@ -17,7 +17,7 @@ const PortfolioHeader = () => {
             {/* Wrapping the Typewriter component with a div */}
             <span className="text-[2.5rem] font-semibold text-[#4285F4]">
               <Typewriter
-                words={['Data Science']}
+                words={['Data Science','Machine Learning','Deep Learning','Natural Language Processing','Computer Vision','Generative AI','Agentic AI','Multi-Agent Orchestration','MLOps','LLMOps','AgentOps']}
                 loop={false}
                 cursor
                 cursorColor="#898888"
