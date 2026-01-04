@@ -122,7 +122,7 @@ export const Education = () => {
     ];
 
     return (
-        <div className="max-w-6xl mx-auto px-6 py-12">
+        <div id="education" className="max-w-6xl mx-auto px-6 py-12">
             <div className="flex items-center justify-center gap-3 text-3xl md:text-4xl font-bold mb-12">
                 <i className="fas fa-user-graduate text-gray-700"></i>
                 <h2>Education</h2>

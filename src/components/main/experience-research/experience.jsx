@@ -4,39 +4,35 @@ import {NavLink} from "react-router-dom"
 import {ArrowForward} from '@mui/icons-material'
 const ExperiencePage = () => {
     const [listExp, setListExp] = useState(experieceList)
-    
-    const experienceList = () => {
-        // Your existing function logic
-    }
 
     return(
         <article className="min-h-screen py-4 px-4">
             <div className="max-w-6xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center ">
-                    <div className="inline-flex items-center justify-center gap-3 text-4xl font-bold mb-4">
+                    <div className="inline-flex items-center justify-center gap-3 text-2xl md:text-4xl font-bold mb-4">
                         <i className="fas fa-briefcase text-blue-600"></i>
                         <h2 className="text-gray-800">
                             Experience & <span className="text-[#4285F4]">Research</span>
                         </h2>
                     </div>
-                    
+
                 </div>
 
                 {/* Timeline Container */}
                 <div className="relative">
                     {/* Central Timeline Line */}
-                    <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600"></div>
+                    <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600"></div>
 
                     {/* Experience Cards */}
                     <div className="space-y-8">
                         {listExp.map((list, index) => (
-                            <div key={index} className="relative pl-20">
+                            <div key={index} className="relative pl-12 md:pl-20">
                                 {/* Timeline Dot */}
-                                <div className="absolute left-5 top-6 w-7 h-7 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10 ring-4 ring-blue-100"></div>
+                                <div className="absolute left-1 md:left-5 top-6 w-7 h-7 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10 ring-4 ring-blue-100"></div>
 
                                 {/* Connecting Line to Card */}
-                                <div className="absolute left-8 top-8 w-12 h-0.5 bg-blue-400"></div>
+                                <div className="absolute left-4 md:left-8 top-8 w-8 md:w-12 h-0.5 bg-blue-400"></div>
 
                                 {/* Experience Card - NOT wrapped in NavLink */}
                                 <div className="w-full border bg-[#39A2DB] px-6 py-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">

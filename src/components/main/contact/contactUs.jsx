@@ -49,7 +49,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto p-6 bg-white">
+    <div id="contact-form" className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto p-4 sm:p-6 bg-white">
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-1">
           <div className="relative">

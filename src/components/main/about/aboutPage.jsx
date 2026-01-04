@@ -76,7 +76,7 @@ const AboutPage = () => {
                 
                 {/* Call to Action */}
                 <div className="text-center pt-6">
-                    <button className="bg-[#4285F4] text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200">
+                    <button onClick={() => { const element = document.getElementById('contact'); if (element) element.scrollIntoView({ behavior: 'smooth' }); }} className="bg-[#4285F4] text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200">
                         <i className="fas fa-envelope mr-2"></i>
                         Get In Touch
                     </button>

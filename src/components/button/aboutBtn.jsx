@@ -5,11 +5,14 @@ const AboutBtn = () => {
     const[focus,setFocus] = useState(false)
     const aboutBtn = () => {
        setFocus(true)
-    
-    // setTimeout(() =>{
-    //     setFocus(false)
-    // },4000)
-      }
+       const element = document.getElementById('about');
+       if (element) {
+           element.scrollIntoView({ behavior: 'smooth' });
+       }
+     // setTimeout(() =>{
+     //     setFocus(false)
+     // },4000)
+       }
     
     return(
         <div>
